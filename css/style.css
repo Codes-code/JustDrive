@@ -42,23 +42,23 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 6%;
   left: 3.4%;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.logo:hover {
+.header__logo:hover {
   animation: Rotatebeep ease-in-out;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
-.Box_middle {
+.header__Box_middle {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -66,13 +66,13 @@ body {
   text-align: center;
 }
 
-.Header_primary {
+.Heading_primary {
   color: white;
   backface-visibility: hidden;
   margin-bottom: 11%;
 }
 
-.Heading_primary_main {
+.Heading_primary--main {
   display: block;
   font-size: 4.5rem;
   font-weight: 400;
@@ -83,7 +83,7 @@ body {
   animation-timing-function: ease-in-out;
 }
 
-.Heading_primary_sub {
+.Heading_primary--sub {
   display: block;
   font-size: 1.7rem;
   font-weight: 500;
@@ -231,7 +231,7 @@ body {
   position: relative;
   
 }
-.Btn_anim{
+.Btn--anim{
   animation: Buttonanim .6s 1.6s;
   animation-fill-mode: backwards;
 }
@@ -246,7 +246,7 @@ body {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.Btn_white {
+.Btn--white {
 
   background-color: white;
   color: #777;
