@@ -44,7 +44,7 @@ body {
   text-align: center; }
 
 .Heading_primary {
-  color: white;
+  color: #ffffff;
   backface-visibility: hidden;
   margin-bottom: 11%; }
 
@@ -175,7 +175,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .Btn--white {
-  background-color: white;
+  background-color: #ffffff;
   color: #777;
   padding: 1.5% 3%;
   display: inline-block; }
@@ -190,7 +190,7 @@ body {
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: all 0.4s; }
 
 .Btn:hover::after {

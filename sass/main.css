@@ -60,7 +60,7 @@ body {
 }
 
 .Heading_primary {
-  color: white;
+  color: #ffffff;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin-bottom: 11%;
@@ -390,7 +390,7 @@ body {
 }
 
 .Btn--white {
-  background-color: white;
+  background-color: #ffffff;
   color: #777;
   padding: 1.5% 3%;
   display: inline-block;
@@ -406,7 +406,7 @@ body {
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
