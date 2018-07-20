@@ -357,8 +357,7 @@ body {
   }
 }
 
-.Btn:link,
-.Btn:visited {
+.Btn:link, .Btn:visited {
   letter-spacing: .5rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -382,6 +381,12 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.Btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 .Btn:active {
   -webkit-transform: translateY(-3%);
           transform: translateY(-3%);
@@ -394,6 +399,10 @@ body {
   color: #777;
   padding: 1.5% 3%;
   display: inline-block;
+}
+
+.Btn--white::after {
+  background-color: #ffffff;
 }
 
 .Btn::after {
@@ -409,11 +418,5 @@ body {
   background-color: #ffffff;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.Btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

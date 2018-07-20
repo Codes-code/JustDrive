@@ -40,58 +40,62 @@ $color-white:#ffffff;
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    &__logo-box {
+      position: absolute;
+      top: 6%;
+      left: 3.4%;
+    }
+    
+    &__logo {
+      height: 3.5rem;
+    }
+    
+    &__logo:hover {
+      animation: Rotatebeep ease-in-out;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
+    
+    &__Box_middle {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 47%;
+      text-align: center;
+    }
   }
   
-  .header__logo-box {
-    position: absolute;
-    top: 6%;
-    left: 3.4%;
-  }
   
-  .header__logo {
-    height: 3.5rem;
-  }
-  
-  .header__logo:hover {
-    animation: Rotatebeep ease-in-out;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-  }
-  
-  .header__Box_middle {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 47%;
-    text-align: center;
-  }
   
   .Heading_primary {
     color: $color-white;
     backface-visibility: hidden;
     margin-bottom: 11%;
+
+      &--main {
+      display: block;
+      font-size: 4.5rem;
+      font-weight: 400;
+      letter-spacing: 3.8rem;
+      margin-left: 2.5rem;
+      animation: Movefromleft;
+      animation-duration: 2.35s;
+      animation-timing-function: ease-in-out;
+    }
+    
+      &--sub {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: 1.3rem;
+      animation: Movefromright;
+      animation-duration: 2.35s;
+      animation-timing-function: ease-in-out;
+    }
   }
   
-  .Heading_primary--main {
-    display: block;
-    font-size: 4.5rem;
-    font-weight: 400;
-    letter-spacing: 3.8rem;
-    margin-left: 2.5rem;
-    animation: Movefromleft;
-    animation-duration: 2.35s;
-    animation-timing-function: ease-in-out;
-  }
   
-  .Heading_primary--sub {
-    display: block;
-    font-size: 1.7rem;
-    font-weight: 500;
-    letter-spacing: 1.3rem;
-    animation: Movefromright;
-    animation-duration: 2.35s;
-    animation-timing-function: ease-in-out;
-  }
   
   @keyframes Movefromleft {
     0% {
@@ -176,9 +180,9 @@ $color-white:#ffffff;
     }
   }
   
-  
-  .Btn:link,
-  .Btn:visited {
+  .Btn{
+    &:link,
+  &:visited {
     letter-spacing: .5rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -187,30 +191,39 @@ $color-white:#ffffff;
     position: relative;
     
   }
-  .Btn--anim{
+  &--anim{
     animation: Buttonanim .6s 1.6s;
     animation-fill-mode: backwards;
   }
   
-  .Btn:hover {
+  &:hover {
     transform: translateY(-8%);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
   
-  .Btn:active {
+  &:active {
     transform: translateY(-3%);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
   }
   
-  .Btn--white {
+  &--white {
   
     background-color: $color-white;
     color: $color-grey-dark;
     padding: 1.5% 3%;
     display: inline-block;
+
+    &::after{
+      background-color: $color-white;
+    }
   }
   
-  .Btn::after {
+  &::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -223,9 +236,8 @@ $color-white:#ffffff;
     background-color: $color-white;
     transition: all 0.4s;
   }
-  
-  .Btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+
   }
+  
+  
   
