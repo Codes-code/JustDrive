@@ -1,11 +1,13 @@
-@import "base/base";
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
-$color-primary:#267cbd;
-$color-primary-light:lighten($color-primary,15%);
-$color-primary-dark:darken($color-primary,15%);
-$color-black:#000;
-$color-grey-dark:#777;
-$color-white:#ffffff;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
 
 
 *,*::after,*::before {
