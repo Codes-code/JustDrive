@@ -1,4 +1,8 @@
 .row{
-    max-width: 114rem;
-    background-color: $color-white;
+    
+    max-width: $grid-width;
+    background-color: $color-black;
+    margin: 0 auto;
+    margin-bottom: $gutter-vertical;
+    
 }

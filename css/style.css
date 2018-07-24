@@ -199,7 +199,9 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #fff; }
+  background-color: #000;
+  margin: 0 auto;
+  margin-bottom: 8rem; }
 
 .header {
   height: 95vh;
