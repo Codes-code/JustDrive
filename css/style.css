@@ -104,7 +104,7 @@ body {
   padding: 3rem; }
 
 .Heading_primary {
-  color: #ffffff;
+  color: #fff;
   backface-visibility: hidden;
   margin-bottom: 11%; }
   .Heading_primary--main {
@@ -134,7 +134,7 @@ body {
   padding: 3rem; }
 
 .Heading_primary {
-  color: #ffffff;
+  color: #fff;
   backface-visibility: hidden;
   margin-bottom: 11%; }
   .Heading_primary--main {
@@ -179,12 +179,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .Btn--white {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #777;
   padding: 1.5% 3%;
   display: inline-block; }
-  .Btn--white::after {
-    background-color: #ffffff; }
 
 .Btn::after {
   content: "";
@@ -196,8 +194,12 @@ body {
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: #ffffff;
+  background-color: #fff;
   transition: all 0.4s; }
+
+.row {
+  max-width: 114rem;
+  background-color: #000; }
 
 .header {
   height: 95vh;
