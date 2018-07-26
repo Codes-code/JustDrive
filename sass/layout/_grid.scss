@@ -1,52 +1,45 @@
-.row{
-    
+.row {
     max-width: $grid-width;
-    background-color: $color-white;
     margin: 0 auto;
-    
-    &:not(last-child){
+    background-color: $color-silver;
+
+    &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
     
-    .column-1-of-2{
-        width: calc( ( 100%-#{$gutter-horizontal} ) / 2.236 );
-        background-color: $color-pink;
-        float: left;
+    @include clearfix;
+
+    [class^="col-"] {
+        float: right;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
         
-        &:not(last-child){
-            margin-right: $gutter-horizontal;
-        }
     }
 
-    .column-1-of-3{
-        width: calc( ( 100%-#{$gutter-horizontal} ) / 3.57 );
-        background-color: $color-yellow;
-        float: left;
-        
-        &:not(last-child){
-            margin-right: $gutter-horizontal;
-        }
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
     }
 
-    .column-2-of-3{
-        width: calc(( 100%-#{$gutter-horizontal})/1.627);
-        background-color: $color-red;
-        float: left;
-
-        &:not(last-child){
-            margin-right: $gutter-horizontal;
-        }
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
     }
 
-    .column-1-of-4{
-        width: calc(100%/5.07);
-        background-color: $color-primary;
-        float: left;
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
 
-        &:not(last-child){
-            margin-right: $gutter-horizontal;
-        }
+    .col-2-of-4 {
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
     }
 
 }
-//( 100%-(3*(#{$gutter-horizontal})) ) / 4
