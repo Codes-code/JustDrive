@@ -3,7 +3,6 @@
     max-width: $grid-width;
     background-color: $color-white;
     margin: 0 auto;
-    margin-bottom: 0rem;
     
     &:not(last-child){
         margin-bottom: $gutter-vertical;
@@ -13,28 +12,40 @@
         width: calc( ( 100%-#{$gutter-horizontal} ) / 2.236 );
         background-color: $color-pink;
         float: left;
-        margin-right: $gutter-horizontal;
+        
+        &:not(last-child){
+            margin-right: $gutter-horizontal;
+        }
     }
 
     .column-1-of-3{
         width: calc( ( 100%-#{$gutter-horizontal} ) / 3.57 );
         background-color: $color-yellow;
         float: left;
-        margin-right: $gutter-horizontal;
+        
+        &:not(last-child){
+            margin-right: $gutter-horizontal;
+        }
     }
 
     .column-2-of-3{
         width: calc(( 100%-#{$gutter-horizontal})/1.627);
         background-color: $color-red;
         float: left;
-        margin-right: $gutter-horizontal;
+
+        &:not(last-child){
+            margin-right: $gutter-horizontal;
+        }
     }
 
     .column-1-of-4{
-        width: calc(50%-#{$gutter-horizontal});
+        width: calc(100%/5.07);
         background-color: $color-primary;
         float: left;
-        margin-right: $gutter-horizontal;
+
+        &:not(last-child){
+            margin-right: $gutter-horizontal;
+        }
     }
 
 }
